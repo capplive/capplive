@@ -53,6 +53,7 @@ Want to create a live dvd that has all this software on it and your custom setti
 
 Do this:
 
+
 1   Install Linux Mint to your hardrive.
 
 2.  Use this script to install all the releveant dev tools.

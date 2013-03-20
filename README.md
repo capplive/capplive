@@ -9,21 +9,21 @@ This script was developed on Linux Mint 13 Cinnamon.  It may work on other Ubunt
 
 INSTRUCTIONS:
 
-1.  Download a the live iso here to use this script:
+- Download a the live iso here to use this script:
 
 http://www.linuxmint.com/rel_maya_whatsnew.php
 
-2.  Burn the iso to a dvd.
+- Burn the iso to a dvd.
 
-3.  Boot your computer up with the dvd.
+- Boot your computer up with the dvd.
 
-4.  Copy capplive.sh to /home/mint/
+- Copy capplive.sh to /home/mint/
 
-5.  Run as source:
+- Run as source:
 
 . capplive.sh
 
-6.  Read the installation prompts carefully.
+- Read the installation prompts carefully.
 
 
 Software Installed:

@@ -49,11 +49,13 @@ I will be working on configuring a dev user account meant for Linux Cappuccino D
 
 This most likely will be achieved skel files.
 
-If you'd like to create a live dvd that has all this software on it and your custom settings do this:
+Want to create a live dvd that has all this software on it and your custom settings?
+
+Do this:
 
 1   Install Linux Mint to your hardrive.
 
-2.  Use this script to install all the releveant tools.
+2.  Use this script to install all the releveant dev tools.
 
 3.  Make all your custom changes, wallpaper, new software, etc.
 

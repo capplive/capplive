@@ -52,7 +52,11 @@ This most likely will be achieved skel files.
 If you'd like to create a live dvd that has all this software on it and your custom settings do this:
 
 1   Install Linux Mint to your hardrive.
+
 2.  Use this script to install all the releveant tools.
+
 3.  Make all your custom changes, wallpaper, new software, etc.
+
 4.  Install and run Remastersys. Remastersys will build your custom iso.
+
 5.  Burn and boot.  Makes a great dev testing DVD or bootable and installable backup!

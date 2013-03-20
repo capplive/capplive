@@ -47,7 +47,7 @@ I will be working on configuring a dev user account meant for Linux Cappuccino D
 - documentation and api shortcuts
 - bookmarks to relevant resources
 
-This most likely will be achieved skel files.
+This most likely will be achieved with skel files.
 
 Want to create a live dvd that has all this software on it and your custom settings?
 

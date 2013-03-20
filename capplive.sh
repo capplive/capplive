@@ -3,7 +3,6 @@
 FILE="/tmp/out.$$"
 GREP="/bin/grep"
 #....
-# Make sure only root can run our script
 
 if [[ $EUID -ne 0 ]]; then
    echo

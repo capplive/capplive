@@ -137,7 +137,7 @@ export NARWHAL_ENGINE=rhino
 export PATH="/usr/local/narwhal/bin:$PATH"
 export CAPP_BUILD="/home/$USER/cappuccino/Build"
 echo "NARWHAL_ENGINE=rhino" >> /home/$USER/.bashrc
-echo 'PATH="/usr/local/narwhal/bin:$PATH"' >> /home/$USER/.bashrc
-echo 'CAPP_BUILD="/home/$USER/cappuccino/Build"' >> /home/$USER/.bashrc
+echo PATH="/usr/local/narwhal/bin:$PATH" >> /home/$USER/.bashrc
+echo CAPP_BUILD="/home/$USER/cappuccino/Build" >> /home/$USER/.bashrc
 
 jake sudo-install

@@ -118,10 +118,10 @@ cd ~/.config/sublime-text-2/Packages/
 git clone git://github.com/aparajita/Cappuccino-Sublime.git
 cd ~/
 
-if [ ! -f .bashrc ];
-then
-    echo "" > .bashrc
-fi
+# if [ ! -f .bashrc ];
+# then
+#     echo "" > .bashrc
+# fi
 
 printf "\n\nCappuccino will now be installed.  Answer yes to all (y/n) questions and choose all default answers.  After the questions end, it may take several minute for Cappuccino to build.  Do not close the Terminal window.\n\n<enter to install Cappuccino>\n"
 read x

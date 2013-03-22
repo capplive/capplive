@@ -49,12 +49,17 @@ sudo apt-get -q -y install apache2
 sudo apt-get -q -y install git
 sudo apt-get -q -y install nautilus
 
-# sudo su
-# wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | apt-key add -
-# echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list
-# exit
-# sudo apt-get update
-# sudo apt-get install remastersys*
+# printf "\n\nAnswer NO if you are running the script on the Live disk.  If you already installed Mint and are running the script on an installed Mint, then you may answer yes.  Remastersys allows you to create a live disk with all your custom settings on it.  Do you want to install Remastersys?  (y or n) \n\n<enter to continue>\n"
+# read x
+# if["$x" == "y"]; then 
+#   sudo -u root -s wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
+#   cat /etc/apt/sources.list > souces.list
+#   echo "deb http://www.remastersys.com/ubuntu precise main" >> sources.list
+#   sudo cp sources.list /etc/apt/
+#   sudo apt-get update
+#   sudo apt-get -q -y install remastersys
+#   sudo apt-get -q -y install remastersys-gtk
+# fi
 
 printf "\n\nFirefox will be launched to test Apache.  Close Firefox to continue.\n\n<enter to launch Apache test>\n"
 read x

@@ -47,6 +47,7 @@ sudo apt-get -q -y install curl
 sudo apt-get -q -y install filezilla
 sudo apt-get -q -y install apache2
 sudo apt-get -q -y install git
+sudo apt-get -q -y install nautilus
 
 printf "\n\nFirefox will be launched to test Apache.  Close Firefox to continue.\n\n<enter to launch Apache test>\n"
 read x

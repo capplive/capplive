@@ -32,6 +32,7 @@ read x
 
 sudo killall firefox
 sudo apt-get update
+wget https://addons.mozilla.org/firefox/downloads/latest/1843/addon-1843-latest.xpi && firefox *.xpi && rm *.xpi
 
 printf "\n\nYou will make several passwords during this install.  Store passwords conveniently in keepassx.  Keepassx will be launching shortly.\n\n<enter to continue>\n"
 read x

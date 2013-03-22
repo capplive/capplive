@@ -49,12 +49,12 @@ sudo apt-get -q -y install apache2
 sudo apt-get -q -y install git
 sudo apt-get -q -y install nautilus
 
-sudo su
-wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | apt-key add -
-echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list
-exit
-sudo apt-get update
-sudo apt-get install remastersys*
+# sudo su
+# wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | apt-key add -
+# echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list
+# exit
+# sudo apt-get update
+# sudo apt-get install remastersys*
 
 printf "\n\nFirefox will be launched to test Apache.  Close Firefox to continue.\n\n<enter to launch Apache test>\n"
 read x

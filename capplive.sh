@@ -25,6 +25,8 @@ sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A INPUT -j DROP
 
+xchat --url=irc://irc.freenode.net:6667/#cappuccino
+
 printf "Cappuccino Live!! - For Linux Users.  This script in meant run live on Linux Mint 13 Cinnamon.\n\n"
 
 printf "\nYou will be prompted a few times during intallation.  Read the prompts carefully or your installation may fail! This script may not work twice so get it right the first time or reboot the live disk and start again.  Once you understand how to do it without error live, then use the script on an installed version of Mint.  If Firefox is running, shut it down before you press enter.\n\n<enter to continue>\n"

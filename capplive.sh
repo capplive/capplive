@@ -75,8 +75,7 @@ sudo /etc/init.d/apache2 restart
 echo '<?php phpinfo(); ?>' > phptest.php
 sudo mv phptest.php /var/www/
 
-printf "\n\nFirefox will be launched to test php.  Close Firefox to continue.\n\n<enter to launch php test>\n"
-read x
+printf "\n\nFirefox will be launched to test php.  \n\n<Close Firefox to continue.t>\n"
 firefox localhost/phptest.php
 
 printf "\n\nmysql server is about to be installed.  mysql has a set of users of it's own.  To begin with, mysql comes with one user called: root.  You will be asked to set root's password.  You must do this!  Use keepassx to store the password. \n\n<enter to install mysql server>\n"

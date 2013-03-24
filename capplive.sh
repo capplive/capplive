@@ -7,12 +7,12 @@ GREP="/bin/grep"
 if [[ $EUID -ne 0 ]]; then
    echo
 else
-   echo "This script may not be run as root" 1>&2
+   zenity --warning --text "This script may not be run as root";
    exit 1
 fi
 
 if [ "$0" != "bash" ]; then
-   printf "\n\nThis script must be executed as source.  Execute this way:\n\n. cappLive.sh\n\n"
+   zenity --warning --text "This script must be executed as source.  Execute this way:\n\n. cappLive.sh";
    exit 1
 fi
 
@@ -27,10 +27,7 @@ sudo iptables -A INPUT -j DROP
 
 # xchat --url=irc://irc.freenode.net:6667/#cappuccino
 
-printf "Cappuccino Live!! - For Linux Users.  This script in meant run live on Linux Mint 13 Cinnamon.\n\n"
-
-printf "\nYou will be prompted a few times during intallation.  Read the prompts carefully or your installation may fail! This script may not work twice so get it right the first time or reboot the live disk and start again.  Once you understand how to do it without error live, then use the script on an installed version of Mint.  If Firefox is running, shut it down before you press enter.\n\n<enter to continue>\n"
-read x
+zenity --info --text "Cappuccino Live for Linux and Windows users.  This script is meant to run live on Linux Mint 13 Cinnomon.  You will be prompted a few times during installation.  Read the prompts carefully or your installation may fail.  Shutdown Firefox before running."
 
 sudo killall firefox
 sudo apt-get update

@@ -25,7 +25,7 @@ sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A INPUT -j DROP
 
-xchat --url=irc://irc.freenode.net:6667/#cappuccino
+# xchat --url=irc://irc.freenode.net:6667/#cappuccino
 
 printf "Cappuccino Live!! - For Linux Users.  This script in meant run live on Linux Mint 13 Cinnamon.\n\n"
 

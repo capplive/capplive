@@ -73,8 +73,7 @@ sudo mv phptest.php /var/www/
 printf "\n\nFirefox will be launched to test php.  \n\n<Close Firefox to continue.t>\n"
 firefox localhost/phptest.php
 
-printf "\n\nmysql server is about to be installed.  mysql has a set of users of it's own.  To begin with, mysql comes with one user called: root.  You will be asked to set root's password.  You must do this!  Use keepassx to store the password. \n\n<enter to install mysql server>\n"
-read x
+zenity --info --text "mysql server is about to be installed.  mysql has a set of users of it's own.  To begin with, mysql comes with one user called: root.  You will be asked to set root's password.  You must do this!  Use keepassx to store the password."
 sudo apt-get -q -y install mysql-server
 
 printf "\n\nmyphpadmin is about to be installed.  You will be prompted four times: \n(1) Use the space bar to select Apache, and then tab to ok, and press enter. \n(2) Answer yes at the 'Configuring phpmyadmin' screen by pressing enter.\n(3) Enter your mysql root user password (the one you just created).\n(4) Finally, you must create a new password for myphpadmin program.  myphpadmin also a set of users of it's own.  You must create this password!  Use keepassx to store the password. \n\n<enter to install nmyphpadmin>"

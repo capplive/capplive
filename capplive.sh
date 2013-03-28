@@ -76,19 +76,16 @@ firefox localhost/phptest.php
 zenity --info --text "mysql server is about to be installed.  mysql has a set of users of it's own.  To begin with, mysql comes with one user called: root.  You will be asked to set root's password.  You must do this!  Use keepassx to store the password."
 sudo apt-get -q -y install mysql-server
 
-printf "\n\nmyphpadmin is about to be installed.  You will be prompted four times: \n(1) Use the space bar to select Apache, and then tab to ok, and press enter. \n(2) Answer yes at the 'Configuring phpmyadmin' screen by pressing enter.\n(3) Enter your mysql root user password (the one you just created).\n(4) Finally, you must create a new password for myphpadmin program.  myphpadmin also a set of users of it's own.  You must create this password!  Use keepassx to store the password. \n\n<enter to install nmyphpadmin>"
-read x
+zenity --info --text "myphpadmin is about to be installed.  You will be prompted four times: \n(1) Use the space bar to select Apache, and then tab to ok, and press enter. \n(2) Answer yes at the 'Configuring phpmyadmin' screen by pressing enter.\n(3) Enter your mysql root user password (the one you just created).\n(4) Finally, you must create a new password for myphpadmin program.  myphpadmin also a set of users of it's own.  You must create this password!  Use keepassx to store the password. (It's a good idea to keep this window up for reference for this process.)" &
 sudo apt-get -q -y install libapache2-mod-auth-mysql php5-mysql phpmyadmin
 
-printf "\n\nIt's time to uncomment a line inside a file that will be opened when you hit enter.  Use find to find the line\n\nextension=msql.so\n\nand take out the semi-colon at the begining of the line to uncomment it, then hit save, quit. \n\n<enter to open file to edit>\n"
+zenity --info --text "It's time to uncomment a line inside a file that will be opened when you hit enter.  Use find to find the line\n\nextension=msql.so\n\nand take out the semi-colon at the begining of the line to uncomment it, then hit save, quit." &
 gksudo gedit /etc/php5/apache2/php.ini
 
-printf "\n\nFirefox will be launched to test opening: phpmyadmin.  You should see phpmyadmin app show up in Firefox.  Close Firefox to continue.\n\n<enter to launch phpmyadmin test>\n"
-read x
+zenity --info --text "Firefox will be launched to test opening: phpmyadmin.  You should see phpmyadmin app show up in Firefox.  Close Firefox to continue."
 firefox localhost/phpmyadmin
 
-printf "\n\nSublime Text is an Objective-J code editor and will be installed and launched to test.\n\n<enter to install Sublime Text>\n"
-read x
+zenity --info --text "Sublime Text is an Objective-J code editor and will be installed and must be launched to install the Objective-J language."
 wget http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.tar.bz2
 tar -xf Sublime\ Text\ 2.0.1.tar.bz2
 sudo cp Sublime\ Text\ 2/Icon/128x128/sublime_text.png /usr/share/icons/sublime.png
@@ -106,7 +103,7 @@ sudo cp Desktop/sublime.desktop /usr/share/applications/sublime.desktop
 sudo chmod 755 /usr/share/applications/sublime.desktop
 sudo chmod 755 Desktop/sublime.desktop
 
-printf "\n\nExit Sublime to continue\n\n<enter to continue>\n"
+zenity --info --text "Close Sublime Text (and this window) to contine."
 sublime
 read x
 
@@ -119,8 +116,7 @@ cd ~/
 #     echo "" > .bashrc
 # fi
 
-printf "\n\nCappuccino will now be installed.  Answer yes to all (y/n) questions and choose all default answers.  After the questions end, it may take several minute for Cappuccino to build.  Do not close the Terminal window.\n\n<enter to install Cappuccino>\n"
-read x
+zenity --info --text "Cappuccino will now be installed and can take several minutes.  But, first you will answer a short amount of questions on the command line.  Answer yes to all (y/n) questions and choose all default answers.  Do not close the Terminal window during this process. Click OK to continue."
 
 git clone git://github.com/cappuccino/cappuccino.git
 cd cappuccino

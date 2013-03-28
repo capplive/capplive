@@ -61,8 +61,7 @@ sudo apt-get -q -y install nautilus
 #   sudo apt-get -q -y install remastersys-gtk
 # fi
 
-printf "\n\nFirefox will be launched to test Apache.  Close Firefox to continue.\n\n<enter to launch Apache test>\n"
-read x
+printf "\n\nFirefox will be launched to test Apache.  \n\n<Close Firefox to continue.>\n"
 firefox localhost
 
 sudo apt-get -q -y install php5 libapache2-mod-php5

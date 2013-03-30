@@ -25,6 +25,8 @@ sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A INPUT -j DROP
 
+cd ~/
+
 # xchat --url=irc://irc.freenode.net:6667/#cappuccino
 
 zenity --info --text "Cappuccino Live for Linux and Windows users.  This script is meant to run live on Linux Mint 13 Cinnomon.  You will be prompted a few times during installation.  Read the prompts carefully or your installation may fail.  Shutdown Firefox before running."

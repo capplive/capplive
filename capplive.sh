@@ -105,9 +105,9 @@ sudo cp Desktop/sublime.desktop /usr/share/applications/sublime.desktop
 sudo chmod 755 /usr/share/applications/sublime.desktop
 sudo chmod 755 Desktop/sublime.desktop
 
-zenity --info --text "Close Sublime Text (and this window) to contine."
+
 sublime
-read x
+zenity --info --text "Close Sublime Text (and this window) to contine."
 
 cd ~/.config/sublime-text-2/Packages/
 git clone git://github.com/aparajita/Cappuccino-Sublime.git
